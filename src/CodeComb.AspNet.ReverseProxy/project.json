@@ -1,0 +1,35 @@
+﻿{
+  "title": "CodeComb.AspNet.ReverseProxy",
+  "version": "1.0.0",
+  "description": "ASP.Net vNext ReverseProxy Package",
+  "copyright": "Harbin Code Comb Technology Co.,Ltd",
+  "authors": [ "AmamiyaYuuko" ],
+  "tags": [ "vNext", "ASP.Net", "MVC" ],
+  "iconUrl": "http://www.1234.sh/images/logo.png",
+  "projectUrl": "https://github.com/CodeCombLLC/ReverseProxy",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "Microsoft.AspNet.Http": "1.0.0-rc1-final",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final"
+  },
+
+  "frameworks": {
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Net.Http": "4.0.0.0"
+      }
+    },
+    "dotnet5.4": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Threading": "4.0.11-beta-23516",
+        "System.Text.RegularExpressions": "4.0.11-beta-23516",
+        "System.Net.Http": "4.0.1-beta-23516"
+      }
+    }
+  }
+}
