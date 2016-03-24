@@ -54,7 +54,7 @@ namespace Microsoft.AspNet.Builder
                             foreach (var f in context.Request.Form.Files)
                                 content.Add(new StreamContent(f.OpenReadStream()), f.GetFormFieldName(), f.GetFileName());
                             foreach (var x in context.Request.Form)
-                                content.Add(new StringContent(x.Key), x.Value);
+                                content.Add(new StringContent(x.Value), x.Key);
                         }
                         catch
                         {
